@@ -54,7 +54,7 @@ open_ports() {
 	. <(wget -qO- https://raw.githubusercontent.com/SecorD0/utils/main/miscellaneous/ports_opening.sh) 31244 31245
 	sudo tee <<EOF >/dev/null $HOME/massa/massa-node/config/config.toml
 [protocol]
-routable_ip = "`wget -qO- eth0.me`"
+routable_ip = "`wget -qO- 2ip.ru`"
 EOF
 	sudo systemctl restart massad
 }
